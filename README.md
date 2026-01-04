@@ -1,7 +1,7 @@
 # Embedded Distance Display System
 
-This project is based on coursework from an computer engineering class
-and was independently refactored and extended into a standalone embedded systems project.
+This project is an embedded systems application that integrates sensing, control, and
+communication on an Arduino microcontroller.
 
 The system periodically measures distance using an ultrasonic sensor and processes the
 raw timing data on an Arduino microcontroller. The main control loop is implemented in a
@@ -41,9 +41,9 @@ enabling remote monitoring and dynamic control of display modes.
 - Dial + LED bar graph
 
 ## Notes on Coursework
-This project originated from coursework, but:
-- All code in this repository has been reorganized and refactored
-- Course-provided instructions, skeleton code, and assignment text are not included
+This project is based on coursework from a computer engineering class
+and was independently refactored and extended into a standalone embedded systems project.
+This project originated from coursework
 
 ## Technologies
 - Arduino (C/C++)
