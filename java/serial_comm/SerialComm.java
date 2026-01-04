@@ -36,7 +36,7 @@ public class SerialComm {
             System.out.println("(writeByte) Sent " + b + " <0x" + String.format("%02X", b) + ">");
         }
     }
- // TODO: Add readByte() method to read data from serial port
+ // readByte() method to read data from serial port
     public byte readByte() {
         byte b = -1;
         try {
@@ -52,7 +52,7 @@ public class SerialComm {
         }
         return b;
     }
- // TODO: Add available() method to read data from serial port
+ // available() method to read data from serial port
     public boolean available() {
         try {
             return port.getInputBufferBytesCount() > 0;
