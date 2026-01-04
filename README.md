@@ -1,11 +1,16 @@
 # Embedded Distance Display System
 
-This project is based on coursework from an intro to CE class
+This project is based on coursework from an computer engineering class
 and was independently refactored and extended into a standalone embedded systems project.
 
-The system measures distance using an ultrasonic sensor and displays the result using
-a servo-driven dial and a PWM-controlled LED bar graph. It also communicates with a
-Java application over a custom serial protocol.
+The system periodically measures distance using an ultrasonic sensor and processes the
+raw timing data on an Arduino microcontroller. The main control loop is implemented in a
+non-blocking, event-driven manner using delta timing and multiple finite state machines
+(FSMs), allowing sensor acquisition, user input, and serial communication to operate
+concurrently. Measured distance values are visualized locally through a servo driven analog dial and a
+PWM-controlled LED bar graph with adjustable brightness. In parallel, the Arduino
+communicates bidirectionally with a Java application over a custom serial protocol,
+enabling remote monitoring and dynamic control of display modes.
 
 ## What I Built
 - A non-blocking Arduino system using delta timing (no `delay()` in the main loop)
