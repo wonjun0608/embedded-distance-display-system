@@ -46,7 +46,7 @@ and was independently refactored and extended into a standalone embedded systems
 This project originated from coursework
 
 ## Technologies
-- Arduino (C/C++)
+- Arduino (C)
 - Java
 - Serial communication
 - Finite state machines
